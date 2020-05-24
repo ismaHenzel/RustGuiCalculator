@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <style>
+        {styles}
+    </style>
+</head>
+<body>
+        <div class="center">
+            <div class="calculator">
+                <div id="last_op"> 
+                    
+                </div>
+                <div id="display">
+                    0
+                </div>
+                <div id="main">
+                    <div class="row">
+                        <button class=".btn-del" onclick="external.invoke('Delete')">C</button>
+                        <button class=".btn-operator" onclick="external.invoke('/')">&#247</button>
+                        <button class=".btn-operator" onclick="external.invoke('*')">X</button>
+                        <button class=".btn-back" onclick="external.invoke('Backspace')">&#8592</button>
+                    </div>
+
+                    <div class="row">
+                        <button class=".btn-num" onclick="external.invoke('7')">7</button>
+                        <button class=".btn-num" onclick="external.invoke('8')">8</button>
+                        <button class=".btn-num" onclick="external.invoke('9')">9</button>
+                        <button class=".btn-operator" onclick="external.invoke('-')">&#8722</button>
+                    </div>
+
+                    <div class="row">
+                        <button class=".btn-num" onclick="external.invoke('4')">4</button>
+                        <button class=".btn-num" onclick="external.invoke('5')">5</button>
+                        <button class=".btn-num" onclick="external.invoke('6')">6</button>
+                        <button class=".btn-operator" onclick="external.invoke('+')">+</button>
+                    </div>
+
+                    <div class="row">
+                        <button class=".btn-num" onclick="external.invoke('1')">1</button>
+                        <button class=".btn-num" onclick="external.invoke('2')">2</button>
+                        <button class=".btn-num" onclick="external.invoke('3')">3</button>
+                        <button class=".btn-num" onclick="external.invoke('%')">%</button>
+                    </div>
+
+                    <div class="row">
+                        <button class=".btn-num"  onclick="external.invoke('0')">0</button>
+                        <button class=".btn-num" onclick="external.invoke('.')">&#10625</button>
+                        <button class=".btn-num" onclick="external.invoke('(')">(</button>
+                        <button class=".btn-num" onclick="external.invoke(')')">)</button>
+                    </div>
+
+                    <div class="row">
+                        <button class=".btn-num" id="equal" onclick="external.invoke('=')">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+        {scripts}
+        </script>
+</body>
+
+</html>
