@@ -1,4 +1,5 @@
 # RustGuiCalculator
+< The code is not a final version > 
 A calculator using Rust with webview to create a interface with html, css and js
 A usage example here: 
 
